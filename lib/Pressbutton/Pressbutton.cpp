@@ -21,7 +21,7 @@ boolean PressButton::IsUp(){return digitalRead(_IoPin) == HIGH && digitalRead(_I
 boolean PressButton::CaptureDownState(){if(IsDown()){WasDown = true;} return WasDown;}
 
 //clears the was down state, returns true if clear was done
-boolean PressButton::CleasWasDown(){if(WasDown){WasDown = false; return true;} return false;} 
+boolean PressButton::ClearWasDown(){if(WasDown){WasDown = false; return true;} return false;} 
 
 //provides a trigger action if the button was pressed but is now released > Clears WasDown
 boolean PressButton::PressReleased(){if (WasDown && IsUp()){RepeatCnt = 0; WasDown = false; return true;} return false;}  

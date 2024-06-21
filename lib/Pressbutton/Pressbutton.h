@@ -20,7 +20,7 @@ public:
     boolean IsDown();           //does a debounced check to see if the specified button is in the down state
     boolean IsUp();             //does debounced check to see if specified button is in the up state
     boolean CaptureDownState(); // will set the WasDown dflag true if was pressed when checked - also returns WasDown
-    boolean CleasWasDown();     //clears the was down state, returns true if clear was done
+    boolean ClearWasDown();     //clears the was down state, returns true if clear was done
     boolean PressReleased();    //provides a trigger action if the button was pressed but is now released > Clears WasDown
     boolean LongPressed();      //provides trigger for long press case
     boolean Repeated();         //Provides and action trigger at a increasingly higher frequency for as long as a key is pressed
